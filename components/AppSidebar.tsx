@@ -41,7 +41,6 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "./ui/collapsible";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const items = [
   {
@@ -79,13 +78,18 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href='/'>
-                <Avatar className='w-[20px] h-[20px]'>
+                {/* <Avatar className='w-[20px] h-[20px]'>
                   <AvatarImage src='https://avatars.githubusercontent.com/u/10222248' />
                   <AvatarFallback>SB</AvatarFallback>
                 </Avatar>
-                <span className='mx-2'>Swan Bytes</span>
-                {/* <Image src='/logo.svg' alt='logo' width={20} height={20} />
-                <span>Swan Byte</span> */}
+                <span className='mx-2'>Swan Bytes</span> */}
+                <Image
+                  src='/swan-circle.png'
+                  alt='logo'
+                  width={20}
+                  height={20}
+                />
+                <span className='mx-1'>Swan Bytes</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
